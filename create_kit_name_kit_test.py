@@ -31,7 +31,7 @@ def test_create_kit_1_symbol_in_name_get_success_response():
 
 #2 Допустимое количество символов (511)201
 def test_create_kit_511_symbols_in_name_get_success_response():
-	positive_assertion("symbol511")
+	positive_assertion(data.kit_body_positive)
 
 #3 Количество символов меньше допустимого (0): 400
 def test_3_negative():
@@ -45,7 +45,7 @@ def test_4_negative():
 #5 Разрешены английские буквы:kit_body = {"name": "QWErty"
 def test_create_kit_english_letters_in_name_get_success_response():
 	positive_assertion("QWErty")
-
+test_create_kit_english_letters_in_name_get_success_response()
 
 #6 Разрешены русские буквы:kit_body = {"name": "Мария"}
 def test_create_kit_russian_letters_in_name_get_success_response():
@@ -69,6 +69,7 @@ def test_create_kit_numeric_name_get_response():
 #10Передан другой тип параметра (число):kit_body = {"name": 123}
 def test_create_kit_numeric_type_name_get_error_response():
 	negative_assertion(123)
+
 
 
 #11Параметр не передан в запросе:kit_body = {}400
