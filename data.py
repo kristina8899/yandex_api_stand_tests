@@ -22,7 +22,7 @@ kit_body={
 
 #чек лист
 
-kit_body_positive = {"name": "a"}
+kit_body_true = {"name": "a"}
 
 #Допустимое количество символов (511):
 

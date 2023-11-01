@@ -14,7 +14,7 @@ def post_new_user(body):
 #Запрос на токен
 def get_new_user_token():
     response = post_new_user(data.user_body)
-    authToken = "Bearer {" + response.json().get("authToken") + "}"
+    authToken = "Bearer " + response.json().get("authToken")
     return authToken
 
 

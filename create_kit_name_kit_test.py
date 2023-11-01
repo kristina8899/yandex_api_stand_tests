@@ -25,7 +25,7 @@ def negative_assertion(name):
 	assert kit_response_negative.status_code == 400
 
 
-#1 Допустимое количество символов (1):kit_body = {"name": "a"}200
+#1 Допустимое количество символов (1):kit_body_true = {"name": "a"}200
 def test_create_kit_1_symbol_in_name_get_success_response():
 	positive_assertion("a")
 
